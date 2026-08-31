@@ -1,0 +1,13 @@
+name: Arduino USB Bridge
+version: "1.0.0"
+slug: arduino_usb_bridge
+description: Arduino UNO CH340 USB serial bridge for Home Assistant
+startup: services
+boot: auto
+arch:
+  - amd64
+usb: true
+devices:
+  - /dev/ttyUSB1:/dev/ttyUSB1
+options: {}
+schema: {}
